@@ -11,9 +11,23 @@ p{
     border-color:red;
 }
 .emphasize{
-    font-size:20vw;
+    font-size:10vh;
     color:red;
     font-style:italic;
     font-weight:800;
     text-decoration:underline;
+}
+#grid_test{
+    display:grid;
+    grid-template-columns: 1fr 3fr;
+    width:20vw;
+    border:solid;
+}
+#grid_test img{
+    border:solid;
+}
+@media(max-width:1200px) {
+    .media_query_test{
+        display:none;
+    }
 }
