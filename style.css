@@ -1,0 +1,12 @@
+p{
+    color:red
+}
+.plain{
+    border:solid;
+    border-color:black;
+    color:rgb(65, 65, 172);
+}
+#URL{
+    border:solid;
+    border-color:red;
+}

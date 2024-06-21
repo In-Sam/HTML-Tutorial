@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
-    <head></head>
+    <head>
+        <link href="style.css" rel="stylesheet">
+    </head>
     <body>
-        <div>
+        <div class="plain">
             <h3>
                 I<br/>
                 am
@@ -18,10 +20,12 @@
                 Development.
             </h1>
         </div>
-        <div>
+        <div class="plain">
             <h2>
-                <a href="https://sec.ssu.ac.kr">
-                    sec.ssu.ac.kr
+                <div id="URL">
+                    <a href="https://sec.ssu.ac.kr">
+                        sec.ssu.ac.kr
+                </div>
                 </a><br/>
                 Here's my academic department homepage
             </h2>
@@ -32,7 +36,7 @@
                 ?
             </button>
         </div>
-        <div>
+        <div class="images">
             <!--<img src="images/Image.png"/><br/>-->
             <br><img src="https://sec.ssu.ac.kr/img/logo.png"/><br/>
             ❤️❤️
@@ -59,6 +63,10 @@
             <input
                 type = "range" min = "0" max = "1"
             />
+            <input type="date"/></br>
+            <input type="month"/></br>
+            <input type="time"/></br>
+            <input type="datetime-local"/></br>
         </div>
     </body>
 </html>
