@@ -10,3 +10,10 @@ p{
     border:solid;
     border-color:red;
 }
+.emphasize{
+    font-size:20vw;
+    color:red;
+    font-style:italic;
+    font-weight:800;
+    text-decoration:underline;
+}
