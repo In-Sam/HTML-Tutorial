@@ -2,6 +2,7 @@
 <html>
     <head>
         <link href="style.css" rel="stylesheet">
+        <script src="script.js"></script>
     </head>
     <body>
         <div class="plain">
@@ -33,14 +34,15 @@
             </h2>
         </div>
         <div>
-            <button>
+            <button id="button_tag1">
                 A button!<br/>
                 ?
             </button>
+            <input type="button" value="new botton" onClick="click1()"/>
         </div>
         <div class="images">
             <!--<img src="images/Image.png"/><br/>-->
-            <br><img src="https://sec.ssu.ac.kr/img/logo.png"/><br/>
+            <br/><img src="https://sec.ssu.ac.kr/img/logo.png" onClick="alert('visit sec.ssu.ac.kr!')"/><br/>
             ❤️❤️
         </div>
         <div>
@@ -83,5 +85,39 @@
                 You can read it width of your browser is over than 1200px!
             </div>
         </div>
+        <div>
+            <p>
+                keydown
+                <input id="keydown"/>
+            </p>
+            <p>
+                change
+                <input id="change"/>
+            </p>
+            <p>
+                input
+                <input id="input"/>
+            </p>
+        </div>
+        <div class="inputTest">
+            <p id="paragraph">
+                Test
+            </p>
+            <input type="text" value="Test" id="input">
+        </div>
+        <script>
+            let EMP_text = document.querySelector(".emphasize")
+            EMP_text.addEventListener("click",
+                function(e) {
+                    alert("why did you clicked this?")
+                }
+            )
+
+            function click1() {
+                console.log('test')
+                let button = document.querySelector("button")
+                button.style.backgroundColor = "red"
+            }
+        </script>
     </body>
 </html>
